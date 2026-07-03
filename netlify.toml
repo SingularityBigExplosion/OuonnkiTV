@@ -9,3 +9,8 @@
   from = "/proxy"
   to = "/.netlify/functions/proxy"
   status = 200
+
+[[headers]]
+for = "/*"
+[headers.values]
+  Basic-Auth = "admin:123456"
